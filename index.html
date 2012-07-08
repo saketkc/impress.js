@@ -74,6 +74,10 @@
     <meta name="author" content="Bartek Szopka" />
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link rel="stylesheet" href="http://www.medikoo.com/asynchronous-javascript/3d/css/font.css">
+<link rel="stylesheet" href="http://www.medikoo.com/asynchronous-javascript/3d/css/default.css">
+<link rel="stylesheet" href="http://www.medikoo.com/asynchronous-javascript/3d/highlight/styles/sunburst.css">
+
 
     <!--
         
@@ -90,7 +94,7 @@
         When creating your own presentation get rid of this file. Start from scratch, it's fun!
         
     -->
-    <link href="css/impress-demo.css" rel="stylesheet" />
+    <!--<link href="css/impress-demo.css" rel="stylesheet" />-->
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -114,7 +118,7 @@
     it can be found later, when `hint` element is being described.
     
 -->
-<body class="impress-not-supported">
+<body  style="height: 100%; overflow: hidden; ">
 
 <!--
     For example this fallback message is only visible when there is `impress-not-supported` class on body.
@@ -145,7 +149,7 @@
     right around the corner of this tag ;)
     
 -->
-<div id="impress">
+<div id="impress" class="step-asynchronous-javascript" >
 
     <!--
         
@@ -164,8 +168,12 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+    
+    <div id="slide-1" class="step slide" data-x="-1000" data-y="-1500">
+		<div class="counter">1 / 43</div>
+         <h1>EOC Talk</h1>
+         <h2>Saket Choudhary</h2>
+         <center><h3>Guide: Dr. Syed Asad Rahman</h3></center>
     </div>
 
     <!--
@@ -184,11 +192,44 @@
         
     -->
     <div class="step slide" data-x="0" data-y="-1500">
-        <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide decks?</q>
+        Project:
+        <ul>
+			<li>A) Develop WebService For Atom to Atom Mapping and ReactionQuery</li>
+			<li>B) Develop predictions machines for enzymes</li>
+			
+        </ul>
     </div>
 
     <div class="step slide" data-x="1000" data-y="-1500">
-        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+        <q>WebServices</q>
+        <ul>
+			<li>Developed a RESTFul WebService for Atom Atom Mapping and Reaction Similarity Search</li>
+			
+        
+        </ul>
+    </div>
+    
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>WebServices : The Challenges</q>
+        <ul>
+			<li>Started from 'scratch'</li>
+			<li>To Develop a service that is can be called from command line and have a WebFront as well</li>
+					
+        
+        </ul>
+    </div>
+
+	<div class="step slide" data-x="1000" data-y="-1500">
+        <q>WebServices : The Model</q>
+        <ul>		
+			<li>The taks submitted by the user is executed as a background job,similar to submission on Farms  </li>					
+			<li>We use threads. Jobs can take as long as 12 hours</li>
+			<li>User gets a success/error message on job submission(instantaeously)</li>
+			<li>Atmost 10 jobs can be run at  a time</li>
+			<li>User can check the status of the submitted job</li>
+			<li>An email is sent back to the user with the mapped reaction file and(or) reaction query results </li>
+        
+        </ul>
     </div>
 
     <!--
