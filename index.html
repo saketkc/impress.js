@@ -68,7 +68,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    <title>EOC Talk | Saket Choudhary</title>
     
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
@@ -191,8 +191,8 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <div class="step slide" data-x="0" data-y="-1500">
-        Project:
+    <div class="step slide" data-x="0" data-y="-1500" data-rotate="90">
+        <q><h3>Project:</h3></q>
         <ul>
 			<li>A) Develop WebService For Atom to Atom Mapping and ReactionQuery</li>
 			<li>B) Develop predictions machines for enzymes</li>
@@ -200,38 +200,73 @@
         </ul>
     </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <q>WebServices</q>
+    <div class="step slide" data-x="0" data-y="-1500" data-rotate="300">
+       <h2><u>WebServices</u></h2>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500" data-rotate="300">
+        <q><h3>WebServices</h3></q>
         <ul>
-			<li>Developed a RESTFul WebService for Atom Atom Mapping and Reaction Similarity Search</li>
+			Developed a 'RESTFul' WebService for Atom Atom Mapping and Reaction Similarity Search
 			
         
         </ul>
     </div>
     
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <q>WebServices : The Challenges</q>
+    <div class="step slide" data-x="1000" data-y="-1500" data-rotate="300">
+        <q><h3>WebServices : The Challenges</h3></q>
         <ul>
-			<li>Started from 'scratch'</li>
-			<li>To Develop a service that is can be called from command line and have a WebFront as well</li>
+			To develop a service that can be called from command line and have a WebFront(HTML) as well
+			
 					
         
         </ul>
     </div>
 
-	<div class="step slide" data-x="1000" data-y="-1500">
-        <q>WebServices : The Model</q>
+	<div class="step slide" data-x="1000" data-y="-1500" data-rotate="60">
+		<h2>WebServices : The Model</h2>
+	</div>
+	<div class="step slide" data-x="1000" data-y="-1500" data-rotate="300">
+        <q><h3>WebServices : The Model</h3></q>
         <ul>		
-			<li>The taks submitted by the user is executed as a background job,similar to submission on Farms  </li>					
-			<li>We use threads. Jobs can take as long as 12 hours</li>
-			<li>User gets a success/error message on job submission(instantaeously)</li>
+			The taks submitted by the user is executed as a background job,similar to submission on Farms 
+			    
+        </ul>
+    </div>
+    
+    <div class="step slide" data-x="1000" data-y="-1500" data-rotate="300">
+        <q><h3>WebServices : The Model</h3></q>
+        <ul>		
+    		We use threads. Jobs can take as long as 12 hours
+			
+	</ul>
+	</div>
+	<div class="step slide" data-x="1000" data-y="-1500" data-rotate="60">
+        <q><h3>WebServices : The Model</h3></q>
+        <ul>
+			<li>Every job submitted has a unique ID associated(jobId)
+			</li>
+			<li> We use MySQL to keep track of these</li>
+			</ul>
+			</div>		
+	
+    
+    <div class="step slide" data-x="1000" data-y="-1500" data-rotate="90">
+        <q><h3>WebServices : The Model</h3></q>
+        <ul>		
+	
+    <li>User gets a success/error message on job submission(instantaeously)</li>
 			<li>Atmost 10 jobs can be run at  a time</li>
 			<li>User can check the status of the submitted job</li>
 			<li>An email is sent back to the user with the mapped reaction file and(or) reaction query results </li>
-        
-        </ul>
+    
+    </ul>
     </div>
-
+    
+<div class="step slide" data-x="000" data-y="0" data-rotate="90">
+	<q><h3>WebServices: The Model</h3></q>
+	<img src="impress.png"/>
+	</div>
     <!--
         
         This is an example of step element being scaled.
@@ -242,10 +277,10 @@
         down (4 times) to make it back to it's correct size.
         
     -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="1">
+        <span class="try"><u><h2>Prediction of Enzymes(Work in Progress)</h2></u></span>
+        <!--<h1>impress.js<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> no rhyme intended</span>-->
     </div>
 
     <!--
@@ -256,15 +291,63 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>It's a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
-    </div>
-
+    
     <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+			<q><h3>Clustering Enzymes</h3></q>
+
+        <p>
+			<ul>
+			<li>Wrote ARFF Generator to generate Attribute Relation File Format(WEKA Format) from the database tables</li>
+			<li>This module allows to merge data from multiple files into an Attribute-Class relation for Enzymes</li>
+			<li>Built a pipeline to convert the data from database to multiple formats:(csv,tab) and futher and R based pipeline to cluster these </li>
+			</ul>
+			</p>
     </div>
+    
+    <div id="desc" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+		<q><h3>Clustering Enzymes</h3></q>
+        <p>
+			<ul>
+			<li>Ran clustering algorithms on EC6 class of Enymezs</li>
+			<li>The clustering was performed using multiple hiererchial clustering and multiple distance methods</li>
+			
+			</ul>
+			</p>
+    </div>
+    
+    <div id="data" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+		<q><h3>Clustering Enzymes</h3></q>
+        <p>
+			<ul>
+			<li>To decide the best clustering method, we make use of Purity index  </li>
+			<center>Purity = (Sum of maximum elements of a particular class in a cluster/ Total Number of Elements)</center>
+			
+			</ul>
+			</p>
+    </div>
+    
+    <div id="reut" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+		<q><h3>Clustering Enzymes</h3></q>
+        <p>
+			<table width="100%" border="2px">
+				<tr><td>Hclust</td><td>Distance</td><td>Value</td><td>Purity</td></tr>
+
+<tr><td>Median</td><td>Manhattan</td><td>1</td><td>9</td></tr>
+<tr><td>Complete</td><td>Euclidean</td><td>0.992</td><td>9</td></tr>
+<tr><td>Complete</td><td>Minkowski</td><td>0.991</td><td>14</td></tr>
+<!--Mcquity	Euclidean	0.991	12
+Median	Euclldean	0.991	7
+Ward	Canberra	0.976	10-->
+<tr><td>Average</td><td>Euclidean</td><td>0.944</td><td>8</td></tr>
+<!--Average 	Minowkski	0.944	8-->
+<tr><td>Ward</td><td>Canberra</td><td>0.976</td><td>10</td></tr>
+<!--Ward	Manhattan	0.902	4
+Ward 	Minkowski	0.902	4-->
+			</table>
+			
+			</p>
+    </div>
+    
 
     <!--
         
@@ -276,7 +359,35 @@
         
     -->
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b>tiny</b> ideas</p>
+		<q><h3>Clustering Enzymes</h3></q>
+        <p>
+			<ul>
+			<li>Clustering wsa performed using "pvclust" , a method in R for performing Agglomerative Clustering </li>
+			<li> We pruned the result dataset where pvalues>=0.95 </li>
+			</ul>
+        
+        </p>
+    </div>
+
+<div id="graph-1" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+		<q><h3>Clustering Enzymes: </h3></q>
+        <img src="median_manhattan.jpg">
+    </div>
+
+<div id="graph-2" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+		<q><h3>Clustering Enzymes: </h3></q>
+        <img src="complete_euclidean.jpg">
+    </div>
+
+<div id="graph-3" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+		<q><h3>Clustering Enzymes: </h3></q>
+        <img src="ward_canberra.jpg">
+    </div>
+
+<div id="conc" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+		<q><h3>Clustering Enzymes: </h3></q>
+        These methods orovide good clustering results based on the Purity value,
+        however there are other criteria for measuring purity of custers too which have not been considered(Mormalized Mutual Information,Radnom Index) 
     </div>
 
     <!--
@@ -299,23 +410,6 @@
         Only one current step has the `present` class.
         
     -->
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
-    </div>
-
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-    </div>
-
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
-    </div>
-
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
-    </div>
-
     <!--
         
         And the last one shows full power and flexibility of impress.js.
@@ -328,10 +422,10 @@
         as `data-rotate` (these two are basically aliases).
         
     -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+    <!--<div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
         <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
         <span class="footnote">* beat that, prezi ;)</span>
-    </div>
+    </div>-->
 
     <!--
         
@@ -348,8 +442,16 @@
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
     -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <div id="to-do" class="step" data-x="3000" data-y="1500" data-scale="10">
+		<q><h3>To Do</h3></q>
+		<ul>
+			<li>Documentaion for WebServices</li>
+			<li>Clustering of all ECs</li>
+			
+		</ul>
     </div>
+    
+    
 
 </div>
 
